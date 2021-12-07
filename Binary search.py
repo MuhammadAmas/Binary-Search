@@ -11,16 +11,15 @@ while start < end and flag==0:
         print (f"Number is found in the list at {midpoint+1}th position")
         flag=1
     
-    elif list[midpoint] <= inp :
+    else:
+        if list[midpoint] <= inp:
             start= midpoint+1
-    elif list[midpoint] >= inp :
+        if list[midpoint] >= inp:
             end= midpoint-1
 
-    elif list[start]==inp:
+    if list[start]==inp:
         print (f"Number is found in the list at {start+1}th position")
         flag=1
     elif list[end]==inp:
         print (f"Number is found in the list at {end+1}th position")
         flag=1
-    else:
-        print (f"Number is not found in the list")
